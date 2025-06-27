@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LibroLibre</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+  <header>
+    <h1>LibroLibre</h1>
+    <nav>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#registro">Registro</a>
+      <a href="#nosotros">Sobre Nosotros</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="catalogo">
+      <h2>Catálogo de libros</h2>
+
+      <!-- NUEVO: Selector de género con onchange -->
+      <div class="filter-bar">
+        <label for="genreSelect"><strong>Filtrar por género:</strong></label>
+        <select id="genreSelect">
+          <option value="">Todos</option>
+          <option value="Ficción">Ficción</option>
+          <option value="Programación">Programación</option>
+          <option value="Realismo mágico">Realismo mágico</option>
+        </select>
+      </div>
+
+      <!-- Formulario de búsqueda -->
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Buscar por título, autor o género" />
+        <button id="searchBtn">Buscar</button>
+        <p id="resultCount"></p>
+      </div>
+
+      <!-- Contenedor para mostrar libros -->
+      <div id="catalog" class="card-container"></div>
+    </section>
+
+    <section id="registro">
+      <h2>Registro de usuarios</h2>
+      <form id="registerForm" class="register-form">
+        <input type="text" name="name" placeholder="Nombre completo" />
+        <input type="email" name="email" placeholder="Correo electrónico" />
+        <input type="password" name="password" placeholder="Contraseña" />
+        <button type="submit">Registrarse</button>
+      </form>
+    </section>
+
+    <section id="nosotros">
+      <h2>Sobre Nosotros</h2>
+      <p>
+        LibroLibre es una biblioteca digital creada por tres entusiastas de la lectura con el objetivo de facilitar el acceso a libros electrónicos y audiolibros de manera simple y eficiente.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 LibroLibre</p>
+  </footer>
+
+  <button id="btn-top" title="Subir arriba">↑</button>
+
+  <script src="dom.js"></script>
+</body>
+</html>

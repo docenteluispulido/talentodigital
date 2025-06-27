@@ -1,0 +1,62 @@
+table {
+    border: 1px solid black;
+    border-collapse: collapse
+}
+
+td {
+        border: 1px solid black;
+}
+
+tr {
+        border: 1px solid black;
+}
+
+#lunes {
+    background-color: aqua;
+}
+
+#martes {
+    background-color: rgb(60, 255, 0);
+}
+
+#miercoles {
+    background-color: rgb(255, 238, 0);
+}
+
+#jueves {
+    background-color: rgb(255, 0, 255);
+}
+
+#viernes {
+    background-color: rgb(38, 0, 255);
+}
+
+#sabado {
+    background-color: rgb(187, 255, 0);
+}
+
+#domingo {
+    background-color: rgb(156, 10, 41);
+}
+
+.muy_importante {
+    color: blue;
+}
+
+.importante {
+    color: rgb(255, 174, 0);
+}
+
+.nada_importante {
+    color: rgb(48, 247, 64);
+}
+
+.normal {
+    color: rgb(201, 25, 25);
+}
+
+.dias {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    border: 1px solid black;
+}

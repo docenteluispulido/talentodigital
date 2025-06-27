@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ECOEXPRESS</title>
+  <link rel="stylesheet" href="style.css">
+
+    <style>
+    .titulo-principal {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(to right, #4caf50, #81c784);
+      color: white;
+    }
+
+    .materiales {
+      padding: 20px;
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    .materiales ul {
+      padding-left: 20px;
+    }
+
+    #footer {
+      font-size: 0.8em;
+      text-align: center;
+      margin-top: 40px;
+      color: gray;
+    }
+
+    .listado {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <h1 class="titulo-principal">Bienvenido a ECOEXPRESS Grupo 4</h1>
+
+  <section class="materiales">
+    <h2>Materiales Aceptados</h2>
+    <div class="listado">
+        <div class="imgtop">
+            <p>Cartón: $10 por kg</p>
+            <img class="listimg" src="img/carton.jpeg" name="carton" alt="carton">
+        </div>
+        <div class="imgtop">
+            <p>Vidrio: $8 por kg</p>
+            <img class="listimg" src="img/vidrio.jpeg" name="vidrio" alt="vidrio">
+        </div>
+        <div class="imgtop">
+            <p>Plástico: $12 por kg</p>
+            <img class="listimg" src="img/plastico.jpeg" name="plastico" alt="plastico">
+        </div>
+        <div class="imgtop">
+            <p>Electrónicos: $20 por unidad</p>
+            <img class="listimg" src="img/electronicos.jpeg" name="electronicos" alt="electronicos">
+        </div>
+        <div class="imgtop">
+            <p>Madera: $10 por kg</p>
+            <img class="listimg" src="img/madera.jpeg" name="madera" alt="madera">
+        </div>
+        <div class="imgtop">
+            <p>Papel: $5 por kg</p>
+            <img class="listimg" src="img/papel.jpeg" name="papel" alt="papel">
+        </div>
+    </div>
+
+    </div>
+  </section>
+
+  <section class="formulario-box">
+    <h2>Agendar Retiro</h2>
+    <form class="formulario">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+
+      <label for="direccion">Dirección</label>
+      <input type="text" id="direccion" name="direccion" placeholder="Tu dirección">
+
+      <label for="material">Material</label>
+      <select id="material" name="material">
+        <option value="carton">Cartón</option>
+        <option value="vidrio">Vidrio</option>
+        <option value="plastico">Plástico</option>
+        <option value="electronicos">Electrónicos</option>
+        <option value="madera">Madera</option>
+        <option value="papel">Papel</option>
+      </select>
+
+      <button type="submit" class="btn-agendar">Agendar</button>
+    </form>
+  </section>
+
+  <footer id="footer">
+    © 2025 ECOEXPRESS. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>

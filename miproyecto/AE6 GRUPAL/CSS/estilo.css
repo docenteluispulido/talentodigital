@@ -1,0 +1,16 @@
+body {
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+h1 span {
+  font-size: 1.5em;
+}
+
+.card img {
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodHero</title>
+  </head>
+  <body>
+    <!-- Tabla para crear margen -->
+    <table width="100%">
+      <tr>
+        <td width="5%"></td>
+        <!-- Espacio a la izquierda -->
+        <td width="80%">
+          
+          <!-- Header: Encabezado principal -->
+          <header>
+            <h1>FOODHERO</h1>
+          </header>
+
+          <!-- Navegación -->
+          <nav>
+            <ul>
+              <li><a href="#funciona">¿Cómo funciona?</a></li>
+              <li><a href="#restaurantes">Restaurantes</a></li>
+              <li><a href="#reservar">Reservar</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </nav>
+
+          <!-- Sección ¿Cómo funciona? -->
+          <section id="funciona">
+            <h2>¿Cómo funciona?</h2>
+            <p>
+              FOODHERO conecta restaurantes con excedentes de comida con
+              personas interesadas en adquirir alimentos a precios reducidos.
+              Los restaurantes publican sus ofertas y los usuarios pueden
+              reservar en línea y recoger en horarios definidos.
+            </p>
+          </section>
+
+          <!-- Sección Restaurantes Asociados -->
+          <section id="restaurantes">
+            <h2>Restaurantes Asociados</h2>
+            <table>
+              <tr>
+                <th>Nombre</th>
+                <th>Oferta</th>
+                <th>Precio</th>
+              </tr>
+              <tr>
+                <td>La Pizzería Feliz</td>
+                <td>2 porciones de pizza + bebida</td>
+                <td>$3.00</td>
+              </tr>
+              <tr>
+                <td>Comida China Express</td>
+                <td>Combo arroz + pollo agridulce</td>
+                <td>$4.50</td>
+              </tr>
+              <tr>
+                <td>Panadería Dulce Hogar</td>
+                <td>3 piezas de pan del día</td>
+                <td>$1.50</td>
+              </tr>
+            </table>
+          </section>
+
+          <!-- Sección para Reservar -->
+          <section id="reservar">
+            <h2>Reservar Pedido</h2>
+
+            <!-- Formulario de reserva -->
+            <form action="/reservar" method="post">
+              <!-- Nombre -->
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required />
+
+              <!-- Restaurante -->
+              <label for="restaurante">Selecciona un restaurante:</label>
+              <select id="restaurante" name="restaurante">
+                <option value="">-- Selecciona --</option>
+                <option value="pizza_feliz">La Pizzería Feliz</option>
+                <option value="comida_china">Comida China Express</option>
+                <option value="panaderia_hogar">Panadería Dulce Hogar</option>
+              </select>
+
+              <!-- Hora de recogida -->
+              <label for="hora_recogida">Hora de recogida:</label>
+              <input
+                type="time"
+                id="hora_recogida"
+                name="hora_recogida"
+                required
+              />
+
+              <div>&nbsp;</div>
+
+              <!-- Comentarios adicionales -->
+              <label for="comentarios">Comentarios adicionales:</label>
+              <br>
+              <!--Salto-->
+
+              <textarea
+                id="comentarios"
+                name="comentarios"
+                rows="4"
+                cols="30"
+                placeholder="Ej, sin ají, sin ajo, sin nada, mejor no me traiga nada..."
+              ></textarea>
+              <br>
+              <!--Salto-->
+
+              <!-- Botón de envío -->
+              <button type="submit">Reservar</button>
+            </form>
+          </section>
+
+          <!-- Pie de página -->
+          <footer>
+            <!-- Información de contacto -->
+            <address id="contacto">
+              Contacto:
+              <a href="mailto:foodhero@ejemplo.com">foodhero@ejemplo.com</a> |
+              Tel: <a href="tel:+1234567890">+123 456 7890</a>
+            </address>
+
+            <!-- Redes sociales -->
+            <p>
+              Síguenos:
+              <a href="https://www.facebook.com" target="_blank" rel="noopener"
+                >Facebook</a
+              >
+              |
+              <a href="https://www.instagram.com" target="_blank" rel="noopener"
+                >Instagram</a
+              >
+              |
+              <a href="https://www.twitter.com" target="_blank" rel="noopener"
+                >Twitter</a
+              >
+            </p>
+
+            <!-- Derechos de autor -->
+            <p>© 2025 FOODHERO - Todos los derechos reservados.</p>
+          </footer>
+        </td>
+        <td width="10%"></td>
+        <!-- Espacio a la derecha -->
+      </tr>
+    </table>
+  </body>
+</html>

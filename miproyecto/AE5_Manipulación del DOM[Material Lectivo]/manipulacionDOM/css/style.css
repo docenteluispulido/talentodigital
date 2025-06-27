@@ -1,0 +1,12 @@
+.cuadro {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(195, 66, 66);
+    margin-bottom: 10px;
+}
+
+li {
+    color: brown;
+    background-color: aqua;
+    border: dotted black;
+}

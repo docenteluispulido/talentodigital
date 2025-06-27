@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes de Star Wars</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Personajes de Star Wars</h1>
+    <div class="gallery">
+        <img id="img1" src="img/image1.jpg" alt="Imagen 1" class="thumbnail">
+        <img id="img2" src="img/image2.jpg" alt="Imagen 2" class="thumbnail">
+        <img id="img3" src="img/image3.jpg" alt="Imagen 3" class="thumbnail">
+        <img id="img4" src="img/image4.jpg" alt="Imagen 4" class="thumbnail">
+    </div>
+
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div class="caption">
+            <button id="prev" class="nav-btn">Anterior</button>
+            <button id="next" class="nav-btn">Siguiente</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ECOEXPRESS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Grupo 4-->
+
+<body>
+
+  <h1 class="titulo-principal">Bienvenido a ECOEXPRESS</h1>
+
+  <section class="materiales">
+    <h2>Materiales Aceptados</h2>
+    <nav class="materiales-nav">
+      <div class="material">
+        <img src="img/carton.jpeg" alt="Cartón" name="Cartón">
+        <p>Cartón<br>$10/kg</p>
+      </div>
+      <div class="material">
+        <img src="img/vidrio.jpeg" alt="Vidrio">
+        <p>Vidrio<br>$8/kg</p>
+      </div>
+      <div class="material">
+        <img src="img/plastico.jpeg" alt="Plástico">
+        <p>Plástico<br>$12/kg</p>
+      </div>
+      <div class="material">
+        <img src="img/electronicos.jpeg" alt="Electrónicos">
+        <p>Electrónicos<br>$20/u</p>
+      </div>
+      <div class="material">
+        <img src="img/madera.jpeg" alt="Madera">
+        <p>Madera<br>$30/u</p>
+      </div>
+      <div class="material">
+        <img src="img/papel.jpeg" alt="Papel">
+        <p>Papel<br>$5/kg</p>
+      </div>
+    </nav>
+  </section>
+
+  <section class="formulario-box">
+    <h2>Agendar Retiro</h2>
+    <form class="formulario">
+      <label for="nombre">Nombre Completo</label><br>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre"><br><br>
+
+      <label for="direccion">Dirección</label><br>
+      <input type="text" id="direccion" name="direccion" placeholder="Tu dirección"><br><br>
+
+      <label for="material">Material</label><br>
+      <select id="material" name="material">
+        <option value="carton">Cartón</option>
+        <option value="vidrio">Vidrio</option>
+        <option value="plastico">Plástico</option>
+        <option value="electronicos">Electrónicos</option>
+        <option value="madera">Madera</option>
+        <option value="papel">Papel</option>
+      </select><br><br>
+
+      <button type="submit" class="btn-agendar">Agendar</button>
+    </form>
+  </section>
+
+  <footer id="footer">
+    © 2025 ECOEXPRESS. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>

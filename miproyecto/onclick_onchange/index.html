@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo onclick_onchange</title>
+</head>
+<body>
+
+  <button id="miBoton">Haz clic aquí</button>
+
+  <select id="miSelect">
+    <option value="1">Opción 1</option>
+    <option value="2">Opción 2</option>
+    <option value="3">Opción 3</option>
+  </select>
+
+  <script>
+    // Seleccionamos el botón
+    let boton = document.getElementById("miBoton");
+
+    // Le agregamos el evento onclick
+    boton.onclick = function() {
+      alert("Este es un evento onclick");
+    };
+
+    // Seleccionamos el select
+    let select = document.getElementById("miSelect");
+
+    // Le agregamos el evento onchange
+    select.onchange = function() {
+      alert("Este no es un evento onclick");
+    };
+  </script>
+
+</body>
+</html>

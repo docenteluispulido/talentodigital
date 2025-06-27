@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f7f7f7;
+}
+
+header {
+    background: #2f2f2f;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cerrar {
+    background: #00c4e4;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.perfil {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 3;
+    margin-right: 20px;
+}
+
+.cabecera-perfil {
+    border-top-left-radius: 10px;
+    background: #00c4e4;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+.cabecera-perfil img {
+    width: 100px;
+    border-radius: 50%;
+    margin-top: -50px;
+    border: 4px solid white;
+    background: white;
+}
+
+.descripcion {
+    margin: 15px 0;
+}
+
+.editar {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.educacion {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+.sidebar {
+    flex: 1.5;
+}
+
+.solicitudes, .conexiones {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.solicitud, .conexiones li {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.solicitud img, .conexiones img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.acciones button {
+    background: none;
+    border: 2px solid hotpink;
+    color: hotpink;
+    margin-left: 10px;
+    font-size: 1.2em;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.acciones button:hover {
+    background: hotpink;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-weight: 500;
+}
